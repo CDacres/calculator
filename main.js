@@ -23,9 +23,12 @@ if (action==='a') {
 } else if (action==='sq') {
 	var number1 = parseFloat(prompt('You have selected squaring a number. \n Please enter your number to square.'));
 	var result = number1 * number1;
-	alert('Your result is: \n' + number1 + ' squared  = ' + result);
+	alert('Your result is: \n' + number1 + ' ^ 2  = ' + result);
 } else if (action==='p') {
-
+	var number1 = parseFloat(prompt('You have selected Powers. \n Please enter your first number which will be the base.'));
+	var number2 = parseFloat(prompt('Please enter your second number which will be the exponent.'));
+	var result = Math.pow(number1, number2);
+	alert('Your result is: \n' + number1 + ' ^ ' + number2 + ' = ' + result);
 } else {
 	alert('Error. You did not enter one of the possible commands. \nPlease refresh the page to try again');
 }
