@@ -1,5 +1,5 @@
 alert('Welcome to the JS Calculator! \nClick OK to get started.');
-var action = prompt('Please select which calculation to perform: \nFor Addition, please enter "a". \nFor Subtraction, please enter "s". \nFor Addition, please enter "a". \nFor Multplication, please enter "m". \nFor Division, please enter "s". \nFor squaring a number, please enter "sq". \nFor Powers, please enter "p". \n').toLowerCase();
+var action = prompt('Please select which calculation to perform: \nFor Addition, please enter "a". \nFor Subtraction, please enter "s". \nFor Multplication, please enter "m". \nFor Division, please enter "d". \nFor squaring a number, please enter "sq". \nFor Powers, please enter "p". \n').toLowerCase();
 if (action==='a') {
 	var number1 = parseFloat(prompt('You have selected Addition. \n Please enter your first number.'));
 	var number2 = parseFloat(prompt('Please enter your second number to add to the first.'));
@@ -12,11 +12,14 @@ if (action==='a') {
 	alert('Your result is: \n' + number1 + ' - ' + number2 + ' = ' + result);
 } else if (action==='m') {
 	var number1 = parseFloat(prompt('You have selected Multplication. \n Please enter your first number.'));
-	var number2 = parseFloat(prompt('Please enter your second number to multiply by the first.'));
+	var number2 = parseFloat(prompt('Please enter your second number to multiply the first by.'));
 	var result = number1 * number2;
 	alert('Your result is: \n' + number1 + ' x ' + number2 + ' = ' + result);
 } else if (action==='d') {
-
+	var number1 = parseFloat(prompt('You have selected Division. \n Please enter your first number.'));
+	var number2 = parseFloat(prompt('Please enter your second number to divide the first by.'));
+	var result = number1 / number2;
+	alert('Your result is: \n' + number1 + ' / ' + number2 + ' = ' + result);
 } else if (action==='sq') {
 
 } else if (action==='p') {
