@@ -1,5 +1,5 @@
-alert('Welcome to the JS Calculator! \nClick OK to get started.');
-var action = prompt('Please select which calculation to perform: \nFor Addition, please enter "a". \nFor Subtraction, please enter "s". \nFor Multplication, please enter "m". \nFor Division, please enter "d". \nFor squaring a number, please enter "sq". \nFor Powers, please enter "p". \n').toLowerCase();
+alert('Welcome to the JS Calculator! \nClick OK or press enter to get started.');
+var action = prompt('Please select which calculation to perform: \nFor Addition, please enter "a". \nFor Subtraction, please enter "s". \nFor Multplication, please enter "m". \nFor Division, please enter "d". \nFor Square Root, please enter "sq". \nFor Powers, please enter "p". \n').toLowerCase();
 if (action==='a') {
 	var number1 = parseFloat(prompt('You have selected Addition. \n Please enter your first number.'));
 	var number2 = parseFloat(prompt('Please enter your second number to add to the first.'));
@@ -21,9 +21,9 @@ if (action==='a') {
 	var result = number1 / number2;
 	alert('Your result is: \n' + number1 + ' / ' + number2 + ' = ' + result);
 } else if (action==='sq') {
-	var number1 = parseFloat(prompt('You have selected squaring a number. \n Please enter your number to square.'));
-	var result = number1 * number1;
-	alert('Your result is: \n' + number1 + ' ^ 2  = ' + result);
+	var number1 = parseFloat(prompt('You have selected Square Root. \n Please enter the number you wish to determine the square root of.'));
+	var result = Math.sqrt(number1);
+	alert('Your result is: \nSquare Root of ' + number1 + '  = ' + result);
 } else if (action==='p') {
 	var number1 = parseFloat(prompt('You have selected Powers. \n Please enter your first number which will be the base.'));
 	var number2 = parseFloat(prompt('Please enter your second number which will be the exponent.'));
