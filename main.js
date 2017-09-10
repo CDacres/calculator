@@ -21,7 +21,9 @@ if (action==='a') {
 	var result = number1 / number2;
 	alert('Your result is: \n' + number1 + ' / ' + number2 + ' = ' + result);
 } else if (action==='sq') {
-
+	var number1 = parseFloat(prompt('You have selected squaring a number. \n Please enter your number to square.'));
+	var result = number1 * number1;
+	alert('Your result is: \n' + number1 + ' squared  = ' + result);
 } else if (action==='p') {
 
 } else {
