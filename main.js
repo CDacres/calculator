@@ -11,7 +11,10 @@ if (action==='a') {
 	var result = number1 - number2;
 	alert('Your result is: \n' + number1 + ' - ' + number2 + ' = ' + result);
 } else if (action==='m') {
-
+	var number1 = parseFloat(prompt('You have selected Multplication. \n Please enter your first number.'));
+	var number2 = parseFloat(prompt('Please enter your second number to multiply by the first.'));
+	var result = number1 * number2;
+	alert('Your result is: \n' + number1 + ' x ' + number2 + ' = ' + result);
 } else if (action==='d') {
 
 } else if (action==='sq') {
